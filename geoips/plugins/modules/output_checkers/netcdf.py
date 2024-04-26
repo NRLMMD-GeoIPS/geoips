@@ -16,6 +16,8 @@ import logging
 
 from geoips.commandline.log_setup import log_with_emphasis
 
+from geoips.commandline.log_setup import log_with_emphasis
+
 LOG = logging.getLogger(__name__)
 
 interface = "output_checkers"
@@ -191,6 +193,7 @@ def outputs_match(plugin, output_product, compare_product):
             f"output_product: {output_product}",
             f"compare_product: {compare_product}",
         )
+        log_with_emphasis(LOG.interactive, *[line for line in str(resp).split("\n")])
         log_with_emphasis(LOG.interactive, *[line for line in str(resp).split("\n")])
         diffout += [
             "\nxarray objects do not match between current output and comparison\n"
