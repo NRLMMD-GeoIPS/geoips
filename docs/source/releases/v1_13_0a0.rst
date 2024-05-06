@@ -17,6 +17,35 @@ Version 1.13.0a0 (2024-04-24)
 
   * Update update_this_release_note
   * Add v1_13_0a0.rst release note
+* Documentation
+
+  * Developer Assisted Package Creation
+
+Documentation
+=============
+
+Developer Asisted Package Creation
+----------------------------------
+
+*From GEOIPS#507: 2024-04-24, Documentation Guideline for Developer-Assisted Package Creation*
+
+The aforementioned issue illustrates the need for a guideline which documents why,
+when, and how developers should work alongside users and researchers to get their
+geospatial data processing routines integrated alongside GeoIPS. Namely, here at CIRA,
+this is a large task for GeoIPS developers. We are expected to work alongside
+researchers to get their routines integrated alongside GeoIPS, and having this
+documentation layed out should streamline this process.
+
+The created guideline illustrates why we do this, what use cases we'll support, and what
+information we as developers will need to generate a standalone package containing the
+researchers' geospatial data processing routines into a GeoIPS Package.
+
+::
+
+    modified: docs/source/devguide/index.rst
+    modified: docs/source/releases/v1_12_2a0.rst
+    modified: docs/source/releases/v1_13_0a0.rst
+    added: docs/source/devguide/dev_assisted_package_creation.rst
 
 Release Updates
 ===============
